@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.bikepool"
+	version 	= "0.0.1">
+
+	<name>Bike Pool</name>
+
+	<description>
+		A simple app to help you bike in swarms.
+	</description>
+
+	<author href="http://www.bikepool.co"
+		email="m14868@gmail.com">
+		Marine Bourdeau
+	</author>
+
+	<icon src="icon.jpeg" gap:role="default" />
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<preference name="orientation" value="portrait" />
+</widget>

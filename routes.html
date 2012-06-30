@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html> 
-<head> 
+	<head> 
 	<title>Routes - Bike Pool</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.css" />
-	<script src="js/jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?sensor=false">
     </script>
-	<script src="js/jquery.mobile-1.1.0.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 </head> 
 <body> 
 
@@ -41,12 +41,12 @@
 	</div><!-- /content -->
 
 	<script>
-		var nyc = new google.maps.LatLng(40.762342,-73.9802);
-		var map = new google.maps.Map(document.getElementById("map_content"), {zoom:11, center: nyc, mapTypeId google.maps.MapTypeId.ROADMAP});
+		var map;
 		var directionsService = new google.maps.DirectionsService();
 		
 		if (Modernizr.geolocation) {
-			navigator.geolocation.getCurrentPosition(show_map, handle_error);
+			show_map();
+			//navigator.geolocation.getCurrentPosition(show_map, handle_error);
 	    } else {
 	    	alert("not supported");
 		}
@@ -55,20 +55,27 @@
 	    	if (position) {
 	    		var initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 	    	} else {
-	    		var initialLocation = new google.maps.LatLng(40.6922, -73.9871);
+	    		var initialLocation = new google.maps.LatLng(40.6952, -73.9871);
 	    	}
-
-	        map.setOptions({center: initialLocation});
+	    
+	        var myOptions = {
+	            zoom: 12, 
+	            center: initialLocation, 
+	            mapTypeId: google.maps.MapTypeId.ROADMAP
+	        };
+	        map = new google.maps.Map(document.getElementById("map_content"), myOptions);
 	        document.getElementById('map_content').style.height = '250px';
+	        google.maps.event.trigger(map, 'resize')
 
-	        var routesLayer = new google.maps.KmlLayer('http://localhost/BikePoolRoutes.kml',{preserveViewport:true});
-	        routesLayer.setMap(map);
 	    }
 
 	    function handle_error(err) {
 	        if (err.code == 1) {
 	        }
 	    }
+
+	    var routesLayer = new google.maps.KmlLayer('https://dl.dropbox.com/u/5121315/Personal/ReinventGreen/BikePool%20Rides.kml',{preserveViewport:true});
+	        routesLayer.setMap(map);
 
 	</script>
 
