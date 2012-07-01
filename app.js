@@ -33,6 +33,8 @@ app.get('/', bikepool.home);
 app.get('/routes', bikepool.routes);
 app.get('/route/:id', bikepool.route);
 app.get('/about', bikepool.about);
+app.get('/routedetails', bikepool.routedetails);
+
 
 var port = process.env.PORT || 3002;
 app.listen(port);
