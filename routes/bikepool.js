@@ -104,5 +104,6 @@ exports.about = function(req, res) {
 
 // handler for displaying the about page
 exports.routedetails = function(req, res) {
-    res.render('routedetails', { title: 'Join A Route - BikePool' });
+	var name = routes[req.params.id].name;
+    res.render('routedetails', { title: 'Join A Route - BikePool', name:name });
 };

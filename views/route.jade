@@ -17,12 +17,12 @@ div(data-role='routes')
 		-for (var id in times)
 				li(data-corners="false", data-shadow="false", data-iconshadow="true", data-wrapperels="div", data-icon="arrow-r", data-iconpos="right", data-theme="d")
 					a(href='/routedetails') #{times[id].time}
-					.thumbs
-						-for(i=0; i<=5; i++) {
-							-var avatarImage = avatars[count];
-								img(src='#{avatarImage}', width='45px', height='45px')
-						-if(count<=avatars.length){count++;}else{count=0;}
-						-}
+						.thumbs
+							-for(i=0; i<=5; i++) {
+								-var avatarImage = avatars[count];
+									img(src='#{avatarImage}', width='45px', height='45px')
+							-if(count<=avatars.length){count++;}else{count=0;}
+							-}
 
 div(data-role='footer')
 	a(href='about.html') About BikePool
