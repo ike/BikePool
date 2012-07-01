@@ -6,7 +6,7 @@
 }
 
 
-.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button, .ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button{
+.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button, .ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button, .ui-btn-up-b, .ui-btn-hover-b, .ui-btn-down-b{
     font-family: 'Bree Serif', serif;
     color:#666666;
 }
@@ -99,6 +99,18 @@ h3{
   
 }
 
+
+/* route detail screen */
+.route-right{
+		float:right;
+		width:20%;
+}
+
+.route-left{
+		width:75%;
+}
+
+
 /* home screen */
 
 #home .ui-body-c, .ui-overlay-c{
@@ -129,7 +141,7 @@ h3{
 }
 
 #home .ui-title{
-  font-size:50px;
+  font-size:30px;
   font-weight:normal;
   text-shadow: 0 1px 1px #ffffff;
 
