@@ -4,23 +4,33 @@
 	<title>Routes - Bike Pool</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?sensor=false">
     </script>
+	
 	<script src="js/jquery.mobile-1.1.0.js"></script>
 </head> 
 <body> 
 
-<div data-role="home">
+<div id="home" data-role="home">
 
-	<div data-role="header">
-		<h1>Bike Pool</h1>
+	<div id="header" data-role="header">
+		<h1><span class="bike">Bike</span> <span class="pool">Pool</span></h1>
 	</div><!-- /header -->
 
-	<div data-role="content">	
-			<a href="routes.html" data-role="button" data-mini="false">Login Lol</a>
+	<div id="content" data-role="content">	
+			<div class="fb-connect">
+				<a href="index.html" data-role="button" data-mini="false">Facebook Connect</a>
+			</div>
+			<div class="subtitle">
+				Travel in Packs.
+			</div>
+				
+				
 	</div><!-- /content -->
 
 </div><!-- /page -->
