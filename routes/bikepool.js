@@ -44,8 +44,8 @@ var times = {
 	2230:{time:'10:30'},
 	2300:{time:'11:00'},
 	2330:{time:'11:30'},
-	0000:{time:'12:00'},
-	0030:{time:'12:30'}
+	2400:{time:'12:00'},
+	2430:{time:'12:30'}
 }
 
 
@@ -92,7 +92,8 @@ exports.route = function(req, res) {
     var name = routes[req.params.id].name;
     var start = routes[req.params.id].start;
     var end = routes[req.params.id].end;
-    res.render('route', { title: name + ' - BikePool', name:name, start:start, end:end, times:times });
+    var members = routes[req.params.id].members;
+    res.render('route', { title: name + ' - BikePool', name:name, start:start, end:end, times:times, avatars:avatars, members:members });
 };
 
 
