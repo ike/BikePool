@@ -1,0 +1,46 @@
+div(data-role='routes')
+	div(data-role='header')
+		h1 Routes
+
+	div(data-role='content')
+		#map_content(width='100%')
+		ul(data-role='listview', style='padding-top: 30px;')
+			li(data-corners="false", data-shadow="false", data-iconshadow="true", data-wrapperels="div", data-icon="arrow-r", data-iconpos="right", data-theme="d")
+				a(href='#') Brooklyn to Manhattan
+
+	script
+		var map;
+		var directionsService = new google.maps.DirectionsService();
+		
+		if (Modernizr.geolocation) {
+			show_map();
+			//navigator.geolocation.getCurrentPosition(show_map, handle_error);
+		} else {
+			alert("not supported");
+		}
+
+		function show_map(position) {
+			if (position) {
+				var initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+			} else {
+				var initialLocation = new google.maps.LatLng(40.6952, -73.9871);
+			}
+		
+			var myOptions = {
+				zoom: 12, 
+				center: initialLocation, 
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			map = new google.maps.Map(document.getElementById("map_content"), myOptions);
+			document.getElementById('map_content').style.height = '250px';
+			google.maps.event.trigger(map, 'resize')
+
+		}
+
+		function handle_error(err) {
+			if (err.code == 1) {
+			}
+		}
+
+		var routesLayer = new google.maps.KmlLayer('https://dl.dropbox.com/u/5121315/Personal/ReinventGreen/BikePool%20Rides.kml',{preserveViewport:true});
+			routesLayer.setMap(map);

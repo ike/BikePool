@@ -4,7 +4,7 @@
  */
 
 var express = require('express')
-  , routes = require('./routes/bikepool')
+var bikepool = require('./routes/bikepool')
 
 var app = module.exports = express.createServer();
 
@@ -30,6 +30,7 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', bikepool.home);
+app.get('/routes', bikepool.routes)
 
 app.listen(3001);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
