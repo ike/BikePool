@@ -29,6 +29,7 @@ h3{
 
 .people{
   margin:20px 0 0 0;
+		float:left;
 }
 
 .profile{
@@ -102,14 +103,30 @@ h3{
 
 /* route detail screen */
 .route-right{
-		float:right;
-		width:20%;
-}
+		float:left;
+		width:30%;
+		margin-top:5px;
+
+
+		
+		}
 
 .route-left{
-		width:75%;
+		width:65%;
+		float:left;
 }
 
+.join-button .ui-btn{
+  background-image: -webkit-gradient(linear, left top, left bottom, from( #fcdf90), to( #fecc46)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient( #fcdf90, #fecc46); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient( #fcdf90, #fecc46); /* FF3.6 */
+  background-image: -ms-linear-gradient( #fcdf90, #fecc46); /* IE10 */
+  background-image: -o-linear-gradient( #fcdf90, #fecc46); /* Opera 11.10+ */
+  background-image: linear-gradient( #fcdf90, #fecc46);
+				box-shadow: 0px 1px 0px #fff;
+		box-shadow: inset 0px inset 1px inset 2px #c09832;
+		color:#fff;
+}
 
 /* home screen */
 
