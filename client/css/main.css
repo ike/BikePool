@@ -35,6 +35,31 @@
   font-weight:normal;
 }
 
+.ui-footer{
+  background:#ffffff;
+  border:none;
+  padding-top:20px;
+  text-align:center;
+}
+
+.ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a{
+  background:none;
+  border:none;
+  background-image:none;
+  text-shadow:0 1px 1px #ffffff;
+  color:#999999;
+  font-family: 'Bree Serif', serif;
+  font-weight:normal;
+}
+
+.ui-btn-left{
+  background:#fff;
+}
+
+#about .ui-icon, .ui-icon-searchfield:after{
+  background:url("../images/icons-18-white.png") no-repeat scroll -144px 0 rgba(0, 0, 0, 0.4);
+}
+
 /* home screen */
 
 #home .ui-body-c, .ui-overlay-c{
