@@ -52,20 +52,21 @@ var times = {
 	0030:{time:'12:30'}
 }
 
-// handler for displaying the routes
+// handler for displaying all the routes
 exports.routes = function(req, res) {
     res.render('routes', { title: 'Routes', routes:routes });
 };
 
-// handler for displaying individual items
+// handler for displaying an individual route
 exports.route = function(req, res) {
     var name = routes[req.params.id].name;
     var start = routes[req.params.id].start;
     var end = routes[req.params.id].end;
     res.render('route', { title: name + ' - BikePool', name:name, start:start, end:end, times:times });
+};
 
 
-// handler for displaying the routes
+// handler for displaying the about page
 exports.about = function(req, res) {
-    res.render('about', { title: 'About - BikePool'});
+    res.render('about', { title: 'About - BikePool' });
 };
