@@ -31,14 +31,29 @@ h2 .tiny, .tiny {
   color:#cccccc;
 }
 
+.fb-connect .ui-btn-inner {
+  color:#ffffff;
+  font-weight:normal;
+  font-size:19px;
+}
+
+
+.fb-connect .ui-btn-up-d, .fb-connect .ui-btn-hover-d, .fb-connect .ui-btn-down-d, .fb-connect .ui-btn-up-c, .fb-connect .ui-btn-hover-c, .fb-connect .ui-btn-down-c{
+  background-image: -webkit-gradient(linear, left top, left bottom, from( #94e0fa), to( #40bfea)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient( #94e0fa, #40bfea); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient( #94e0fa, #40bfea); /* FF3.6 */
+  background-image: -ms-linear-gradient( #94e0fa, #40bfea); /* IE10 */
+  background-image: -o-linear-gradient( #94e0fa, #40bfea); /* Opera 11.10+ */
+  background-image: linear-gradient( #94e0fa, #40bfea);
+}
 
 .ui-header{
-  background-image: -webkit-gradient(linear, left top, left bottom, from( #CFF4FC), to( #497bae)); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient( #CFF4FC, #9DE2F2); /* Chrome 10+, Saf5.1+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, from( #94e0fa), to( #40bfea)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient( #94e0fa, #40bfea); /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient( #94e0fa, #40bfea); /* FF3.6 */
-  background-image: -ms-linear-gradient( #CFF4FC, #9DE2F2); /* IE10 */
-  background-image: -o-linear-gradient( #CFF4FC, #9DE2F2); /* Opera 11.10+ */
-  background-image: linear-gradient( #CFF4FC, #9DE2F2);
+  background-image: -ms-linear-gradient( #94e0fa, #40bfea); /* IE10 */
+  background-image: -o-linear-gradient( #94e0fa, #40bfea); /* Opera 11.10+ */
+  background-image: linear-gradient( #94e0fa, #40bfea);
   border: 1px solid #F6F6F6;
 }
 
@@ -121,5 +136,5 @@ h2 .tiny, .tiny {
 .subtitle{
   color:#51C1D5;
   text-align:center;
-  margin-top:30px;
+  margin-top:50px;
 }
