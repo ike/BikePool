@@ -31,7 +31,7 @@ app.configure('production', function(){
 
 app.get('/', bikepool.home);
 app.get('/routes', bikepool.routes);
-app.get('/route', bikepool.route);
+app.get('/route/:id', bikepool.route);
 app.get('/about', bikepool.about);
 
 var port = process.env.PORT || 3002;
