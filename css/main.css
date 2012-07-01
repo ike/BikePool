@@ -1,19 +1,48 @@
 .ui-body-c, .ui-overlay-c{
+  background:#F6F6F6;
+  font-family: 'Bree Serif', serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  	text-shadow: 0 1px 1px #ffffff;
+}
+
+
+.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button, .ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button{
+    font-family: 'Bree Serif', serif;
+}
+
+.ui-bar-a{
+  text-shadow: none;
+}
+
+
+.ui-header{
   background-image: -webkit-gradient(linear, left top, left bottom, from( #CFF4FC), to( #497bae)); /* Saf4+, Chrome */
   background-image: -webkit-linear-gradient( #CFF4FC, #9DE2F2); /* Chrome 10+, Saf5.1+ */
   background-image: -moz-linear-gradient( #CFF4FC, #9DE2F2); /* FF3.6 */
   background-image: -ms-linear-gradient( #CFF4FC, #9DE2F2); /* IE10 */
   background-image: -o-linear-gradient( #CFF4FC, #9DE2F2); /* Opera 11.10+ */
   background-image: linear-gradient( #CFF4FC, #9DE2F2);
-  font-family: 'Bree Serif', serif;
-  /*font-family: 'Open Sans', sans-serif;*/
-  	text-shadow: 0 1px 1px #ffffff;
-
+  border: 1px solid #F6F6F6;
 }
 
-.ui-bar-a{
-  text-shadow: 0 1px 1px #ffffff;
+.ui-content{
+  font-family: 'Open Sans', sans-serif;
+}
 
+.ui-title{
+  color:white;
+  font-weight:normal;
+}
+
+/* home screen */
+
+#home .ui-body-c, .ui-overlay-c{
+  background-image: -webkit-gradient(linear, left top, left bottom, from( #CFF4FC), to( #497bae)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient( #CFF4FC, #9DE2F2); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient( #CFF4FC, #9DE2F2); /* FF3.6 */
+  background-image: -ms-linear-gradient( #CFF4FC, #9DE2F2); /* IE10 */
+  background-image: -o-linear-gradient( #CFF4FC, #9DE2F2); /* Opera 11.10+ */
+  background-image: linear-gradient( #CFF4FC, #9DE2F2);
 }
 
 #home .ui-header{
@@ -22,7 +51,6 @@
 }
 
 #home .ui-title{
-  color:black;
   font-size:50px;
   font-weight:normal;
 }
@@ -39,9 +67,4 @@
   color:#51C1D5;
   text-align:center;
   margin-top:30px;
-}
-
-.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button, .ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button{
-    font-family: 'Bree Serif', serif;
-  /*font-family: 'Open Sans', sans-serif;*/
 }
