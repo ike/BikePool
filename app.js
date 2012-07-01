@@ -34,6 +34,6 @@ app.get('/routes', bikepool.routes);
 app.get('/route', bikepool.route);
 app.get('/about', bikepool.about);
 
-
-app.listen(3002);
+var port = process.env.PORT || 5000;
+app.listen(port);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
