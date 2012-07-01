@@ -69,3 +69,35 @@ exports.route = function(req, res) {
 exports.about = function(req, res) {
     res.render('about', { title: 'About - BikePool'});
 };
+
+
+// facebook avatars
+var avatars=new Array();
+
+var avatars[
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/275219_592159006_5641090_q.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/41563_403838_1775353908_q.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/274975_709096636_1773343650_q.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/157406_584915952_572452274_q.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-ash2/371359_1391557219_1395016500_q.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/41773_1438022747_9054_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/41773_1438022747_9054_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/275473_1835325427_3297755_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/41468_100000767625615_1306_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/49064_510901969_1084_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/173377_748208372_424926076_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/368878_1342260081_1252270577_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/157797_689905576_1001769255_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/186876_503898642_695328115_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-ash2/49212_612541747_2975_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/572782_524286405_197498286_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/369063_201301062_186105466_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-ash2/173355_702076694_5934574_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/157247_1069030372_254159793_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/368831_1358650828_260028352_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/260864_1523790019_101295787_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-ash2/48978_1072700819_3188_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/157864_12500579_177732011_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/276177_13004024_118900488_n.jpg',
+		'http://profile.ak.fbcdn.net/hprofile-ak-snc4/173588_100000442697893_1142558131_n.jpg',		
+]
