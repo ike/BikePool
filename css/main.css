@@ -8,6 +8,7 @@
 
 .ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button, .ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button{
     font-family: 'Bree Serif', serif;
+    color:#666666;
 }
 
 .ui-bar-a{
@@ -18,14 +19,14 @@
 .ui-header{
   background-image: -webkit-gradient(linear, left top, left bottom, from( #CFF4FC), to( #497bae)); /* Saf4+, Chrome */
   background-image: -webkit-linear-gradient( #CFF4FC, #9DE2F2); /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient( #CFF4FC, #9DE2F2); /* FF3.6 */
+  background-image: -moz-linear-gradient( #94e0fa, #40bfea); /* FF3.6 */
   background-image: -ms-linear-gradient( #CFF4FC, #9DE2F2); /* IE10 */
   background-image: -o-linear-gradient( #CFF4FC, #9DE2F2); /* Opera 11.10+ */
   background-image: linear-gradient( #CFF4FC, #9DE2F2);
   border: 1px solid #F6F6F6;
 }
 
-.ui-content{
+.ui-content, .ui-btn-up-d, .ui-btn-hover-d, .ui-btn-down-d, .ui-btn-up-c, .ui-btn-hover-c, .ui-btn-down-c{
   font-family: 'Open Sans', sans-serif;
 }
 
