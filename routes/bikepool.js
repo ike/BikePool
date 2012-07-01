@@ -20,3 +20,9 @@ exports.item = function(req, res) {
     var end = items[req.params.id].end;
     res.render('item', { title: name + ' - BikePool', name:name, start:start, end:end });
 };
+
+
+// handler for displaying the routes
+exports.about = function(req, res) {
+    res.render('about', { title: 'About - BikePool'});
+};
