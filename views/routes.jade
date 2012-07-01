@@ -11,6 +11,10 @@ div(data-role='routes')
 				- var route = routes[id]
 					li(data-corners="false", data-shadow="false", data-iconshadow="true", data-wrapperels="div", data-icon="arrow-r", data-iconpos="right", data-theme="d")
 						a(href='/route/#{id}') #{route.name}
+		
+
+	div(data-role='footer')
+		a(ahref='about') About BikePool
 
 	script
 		var map;
