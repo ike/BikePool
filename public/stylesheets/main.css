@@ -23,6 +23,18 @@ h2 .tiny, .tiny {
   font-size:13px;
   }
 
+h3{
+  margin:10px 0 0 0;
+}
+
+.people{
+  margin:20px 0 0 0;
+}
+
+.profile{
+  height:80px;
+}
+
 .tiny{
   margin-bottom:5px;
 }
