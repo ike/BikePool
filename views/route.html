@@ -1,32 +1,26 @@
-<!DOCTYPE html>
-<html> 
-<head> 
-	<title>Join a Route - Bike Pool</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.css" />
-		<link rel="stylesheet" href="css/main.css" />
-	<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans' rel='stylesheet' type='text/css'>
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?sensor=false">
-    </script>
-	<script src="js/jquery.mobile-1.1.0.js"></script>
-</head> 	
-<body> 
+div(data-role='routes')
+	div(data-role='header')
+		h1 Join a Route
+	
+	div(data-role='content')
+		#map_content(width='100%')
+		h2 #{name}
+			span(class='tiny') Check-In
+		.tiny #{members} .
+			span(class='soft') &#124;
+			Mon, Tue, Wed, Thu, Fri
 
-<div data-role="routes">
+	#map_content(width='100%')
+	ul(data-role="listview", style="padding-top: 30px;")
 
-	<div data-role="header">
-		<h1>Join a Route</h1>
-	</div><!-- /header -->
+			
+			li(data-corners="false", data-shadow="false", data-iconshadow="true", data-wrapperels="div", data-icon="arrow-r", data-iconpos="right", data-theme="d")
+				a(href='route-detail.html') 
+				.thumbs
 
-	<div data-role="content">	
-		<div id="map_content" width="100%"></div>
-		<h2>Grand Army Plaza <span class="tiny">Check-In</span></h2>
-		<div class="tiny">23 Members <span class="soft">|</span> Mon, Tue, Wed, Thu, Fri</div>
-		
-				<div id="map_content" width="100%"></div>
+					img(src='', width='45px', height='45px')
+
+
 		<ul data-role="listview" style="padding-top: 30px;">
 			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" >
 				<a href="route-detail.html">6:00 AM</a>
