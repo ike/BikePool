@@ -63,4 +63,9 @@ exports.route = function(req, res) {
     var start = routes[req.params.id].start;
     var end = routes[req.params.id].end;
     res.render('route', { title: name + ' - BikePool', name:name, start:start, end:end, times.times });
+
+
+// handler for displaying the routes
+exports.about = function(req, res) {
+    res.render('about', { title: 'About - BikePool'});
 };

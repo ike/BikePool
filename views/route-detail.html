@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title>Join a Route - Bike Pool</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="../public/stylesheets/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet" href="../public/stylesheets/main.css" />
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="../public/javascripts/jquery-1.7.2.min.js"></script>
+	<script src="../public/javascripts/modernizr.js"></script>
+	<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+	<script src="../public/javascripts/jquery.mobile-1.1.0.js"></script>
+</head> 	
+<body> 
+
+<div data-role="routes">
+
+	<div data-role="header">
+		<h1>Join a Route</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Grand Army Plaza <span class="tiny">Check-In</span></h2>
+		<h3>6:00 AM Departure</h3>
+		<div class="tiny">23 Members <span class="soft">|</span> Mon, Tue, Wed, Thu, Fri</div>
+		
+			<div class="people"	>
+				<div class="profile">
+					<img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/275219_592159006_5641090_q.jpgs" width="65px" height="65px" />
+					<span class="name">Valentina P.</span>
+					<span class="name">Friend with Kate E.</span>
+				</div>
+				<div class="profile">
+				<img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/41563_403838_1775353908_q.jpg" width="65px" height="65px" /> <span class="name">Anastasia U.</span>
+				</div>
+				<div class="profile">
+					<img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/274975_709096636_1773343650_q.jpg" width="65px" height="65px" /> <span class="name">Brenna F.</span>
+				</div>
+	</div>
+			
+		<!-- comment this below because this button has to be on the next screen -->
+		<!--<a href="#" data-role="button">Join this Route</a>--> 
+	</div><!-- /content -->
+	
+	
+		<div data-role="footer">
+		<a href="about.html">About BikePool</a>
+	</div>
+		
+
+<!--	<script>
+		var map;
+		var directionsService = new google.maps.DirectionsService();
+
+		function initialize() {
+		  directionsDisplay = new google.maps.DirectionsRenderer();
+		  brooklyn = new google.maps.LatLng(40.6940, -73.9863
+);
+
+		  var myOptions = {
+		    zoom:7,
+		    mapTypeId: google.maps.MapTypeId.ROADMAP,
+		    center: brooklyn
+		  }
+		  map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		  directionsDisplay.setMap(map);
+		}
+
+	    function show_map(startAdd, endAdd) {
+	    
+	        {
+			  origin: startAdd,
+			  destination: endAdd,
+			  travelMode: TravelMode.BICYCLING,
+			  unitSystem: UnitSystem.IMPERIAL
+			}
+
+	        map = new google.maps.Map(document.getElementById("map_content"), myOptions);
+	        document.getElementById('map_content').style.height = '250px';
+	    }
+
+	    function handle_error(err) {
+	        if (err.code == 1) {
+	        }
+	    }
+
+	    $('#routeLocation').on('pagebeforeshow',function(e,data){
+		     var startAddress = $('#startAddress',data.prevPage).text();
+		     var endAddress = $('#endAddress',data.prevPage).text();
+		     $('#brewerlocation').val(brewerlocation);
+		     $('#beerstyle').val(beerstyle);
+		 });
+
+	</script>-->
+
+</div><!-- /page -->
+
+</body>
+</html>
