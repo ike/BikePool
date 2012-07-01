@@ -15,6 +15,22 @@
   text-shadow: none;
 }
 
+h2{
+  margin:0;
+}
+
+h2 .tiny, .tiny {
+  font-size:13px;
+  }
+
+.tiny{
+  margin-bottom:5px;
+}
+  
+.soft {
+  color:#cccccc;
+}
+
 
 .ui-header{
   background-image: -webkit-gradient(linear, left top, left bottom, from( #CFF4FC), to( #497bae)); /* Saf4+, Chrome */
@@ -58,6 +74,17 @@
 
 #about .ui-icon, .ui-icon-searchfield:after{
   background:url("../images/icons-18-white.png") no-repeat scroll -144px 0 rgba(0, 0, 0, 0.4);
+}
+
+.thumbs{
+  padding:0;
+  margin:0 0 0 15px;
+  height:60px;
+}
+
+.thumbs img{
+  border:1px solid #dddddd;
+  
 }
 
 /* home screen */
