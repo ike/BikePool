@@ -30,7 +30,10 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', bikepool.home);
-app.get('/routes', bikepool.routes)
+app.get('/routes', bikepool.routes);
+app.get('/route', bikepool.route);
+
+
 
 app.listen(3001);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

@@ -4,9 +4,13 @@ div(data-role='routes')
 
 	div(data-role='content')
 		#map_content(width='100%')
+
 		ul(data-role='listview', style='padding-top: 30px;')
-			li(data-corners="false", data-shadow="false", data-iconshadow="true", data-wrapperels="div", data-icon="arrow-r", data-iconpos="right", data-theme="d")
-				a(href='#') Brooklyn to Manhattan
+
+			-for (var id in routes)
+				- var route = routes[id]
+					li(data-corners="false", data-shadow="false", data-iconshadow="true", data-wrapperels="div", data-icon="arrow-r", data-iconpos="right", data-theme="d")
+						a(href='/route/#{id}') #{route.name}
 
 	script
 		var map;
