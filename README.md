@@ -11,7 +11,11 @@ BikePool won Best App for Transportation.</p>
 We'd allow users to create new routes and new check-in points (new locations/times) on the map. 
 
 <h4>Team</h4>
-Marine Boudeau, Lori Hoffman, Isaac Lewis, George Magiros, Yannell Rodriguez.
+* Marine Boudeau
+* Isaac Lewis
+* Lori Hoffman
+* George Magiros
+* Yannell Rodriguez
 
 <h4>Press Links</h4>
 * [NYCEDC Tumblr](http://nycedc.tumblr.com/post/25025898533/reinvent-green-hackathon)
