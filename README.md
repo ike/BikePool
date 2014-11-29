@@ -1,5 +1,7 @@
 <h1>BikePool</h1>
 
-Created as part of REINVENT NYC.GOV, New York City Government's first hackathon. 
-Link: http://home2.nyc.gov/html/digital/html/opengov/reinventnycgov.shtml. 
+Created as part of the Reinvent Green Hackathon, New York City Government's first green hackathon. <br>
 
+
+<h5>Links</h5>
+http://nycedc.tumblr.com/post/25025898533/reinvent-green-hackathon
