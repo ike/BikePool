@@ -17,7 +17,7 @@ Marine Boudeau, Lori Hoffman, Isaac Lewis, George Magiros, Yannell Rodriguez.
 * [NYCEDC Tumblr](http://nycedc.tumblr.com/post/25025898533/reinvent-green-hackathon)
 * [inhabitat](http://inhabitat.com/nyc/nyc%E2%80%99s-first-sustainable-hackathon-creates-green-apps-for-the-city/sustainable-hackathon-bikepool/?extend=1)
 * [Brooklyn Tech triangle](http://brooklyntechtriangle.com/reinvent-green-hackathon)
-* [Our Hackers League post](https://www.hackerleague.org/hackathons/reinvent-green/hacks/bike-pooling)
+* [Our Hacker League post](https://www.hackerleague.org/hackathons/reinvent-green/hacks/bike-pooling)
 * [Our keynote slides](https://dl.dropbox.com/u/5121315/Personal/ReinventGreen/reinvent-green-hackathon.key)
 
 <h4>Screenshots</h4>
