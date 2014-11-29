@@ -5,5 +5,5 @@ Bikepool won [best app for transportation]( http://inhabitat.com/nyc/nyc%E2%80%9
 
 
 <h5>Links</h5>
-http://nycedc.tumblr.com/post/25025898533/reinvent-green-hackathon<br>
-http://inhabitat.com/nyc/nyc%E2%80%99s-first-sustainable-hackathon-creates-green-apps-for-the-city/sustainable-hackathon-bikepool/?extend=1
+[nycedc Tumblr](http://nycedc.tumblr.com/post/25025898533/reinvent-green-hackathon)<br>
+[inhabitat](http://inhabitat.com/nyc/nyc%E2%80%99s-first-sustainable-hackathon-creates-green-apps-for-the-city/sustainable-hackathon-bikepool/?extend=1)
